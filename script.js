@@ -1,3 +1,4 @@
+
 document.getElementById('processButton').addEventListener('click', function() {
     const inputNumber = parseFloat(document.getElementById('inputNumber').value);
     if (!isNaN(inputNumber)) {
