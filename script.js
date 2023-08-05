@@ -9,19 +9,17 @@ document.getElementById('processButton').addEventListener('click', function() {
 
 function processNumber(number) 
 {
-if (number <= 250000 ){
+if (number <= 300000 ){
     tax=0;}
-if (number >= 250001 & number <= 500000)
-    {tax= 0.05*(number);}
-if (number >= 500001 & number <= 750000)
-    {tax= 0.1*(number);}
-if (number >= 750001 & number <= 1000000)
-    {tax= 0.15*(number);}
-if (number >= 1000001 & number <= 1250000)
-    {tax= 0.2*(number);}
-if (number >= 1250001 & number <= 1500000)
-    {tax= 0.25*(number)}
+if (number >= 300001 & number <= 600000)
+    {tax= 0.05*(number-300000);}
+if (number >= 600001 & number <= 900000)
+    {tax= 15000+0.1*(number-600000);}
+if (number >= 900001 & number <= 1200000)
+    {tax= 45000+0.15*(number-900000);}
+if (number >= 1200001 & number <= 1500000)
+    {tax= 90000+0.2*(number-1200000);}
 if (number >= 1500001)
-    {tax= 0.3*(number);}
+    {tax=150000+ 0.3*(number-1500000);}
 return tax;    
 }
