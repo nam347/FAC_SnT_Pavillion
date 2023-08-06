@@ -11,10 +11,11 @@ body {
 
 .container {
     text-align: center;
-    background-color: white;
+    background-color: yellow;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 200px;
 }
 
 input {
@@ -27,7 +28,7 @@ input {
 
 button {
     padding: 8px 20px;
-    background-color: #007bff;
+    background-color: red;
     color: white;
     border: none;
     border-radius: 4px;
@@ -36,4 +37,7 @@ button {
 
 #output {
     margin-top: 20px;
+}
+#title{
+    padding: 20px;
 }
